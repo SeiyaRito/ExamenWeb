@@ -1,0 +1,182 @@
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+
+/* Estilos para el contenedor externo */
+
+  .outer-container {
+    display: flex;
+    height: 100vh; /* Altura de la ventana */
+    
+}
+
+.left-column {
+    flex: 50%; /* Toma el 50% del espacio disponible */
+    background-color: #eae7f3; /* Color morado */
+}
+
+.right-column {
+    flex: 100%; /* Toma el 50% del espacio disponible */
+    background-color: #f4f2f9; /* Color blanco, puedes cambiarlo a cualquier otro color */
+}
+
+/* Estilos para el contenedor interno */
+.inner-container {
+    background-color: #ffffff; /* Color blanco */
+    padding: 10px; /* Eliminamos cualquier relleno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5); /* Efecto de sombra */
+    margin: 80px 60px; /* Margen de 80px arriba/abajo y 60px izquierda/derecha */
+    width: calc(100% - 160px); /* Ancho del contenedor (100% del ancho menos 160px de los márgenes izquierdo y derecho) */
+    height: calc(100% - 160px); /* Alto del contenedor (100% de la altura menos 160px de los márgenes arriba y abajo) */
+    display: flex; /* Utilizar flexbox */
+    position: absolute;
+}
+.corner-image {
+  position: absolute;
+  bottom: 10px; /* Posición 10px desde la parte inferior */
+  left: 10px; /* Posición 10px desde la izquierda */
+  
+}
+
+.left-image {
+  position: absolute; /* Posicionamiento absoluto */
+  top: 20px; /* Separación de 20px desde la parte superior */
+  left: 20px; /* Separación de 20px desde la izquierda */
+}
+
+.left-container {
+  position: relative; /* Posicionamiento relativo */
+  flex: 1;
+  background-color: #eae7f3;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-black {
+  color: black; /* Color de texto negro */
+  font-family: sans-serif; /* Fuente sans-serif */
+  margin-bottom: 100%;
+}
+
+.text-purple {
+  color: #800080; /* Color de texto morado */
+  font-family: sans-serif; /* Fuente sans-serif */
+  margin-bottom: 100%;
+  margin-left: 5px;
+}
+
+
+.right-container {
+  flex: 2.1;
+  background-color: #ffffff;
+  border-radius: 0 10px 10px 0;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.input-wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+
+
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.forgot-password {
+  margin-top: 10px;
+}
+
+.recover-link {
+  color: #800080; /* Color morado */
+}
+
+
+.signup-section {
+  position: absolute;
+  top: 20px; /* Separación de 20px desde la parte superior */
+  right: 20px; /* Separación de 20px desde la derecha */
+  display: flex;
+  align-items: center;
+}
+
+.question-text {
+  color: black; /* Color de texto negro */
+  margin-right: 10px; /* Espacio entre el texto y el botón */
+}
+
+.register-button {
+  background-color: #800080; /* Color morado */
+  color: white; /* Color de texto blanco */
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif; /* Fuente sans-serif */
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px; /* Espacio entre campos de entrada */
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid #ccc; /* Borde inferior */
+  background-color: transparent; /* Fondo transparente */
+}
+
+.input-container label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: none; /* Evitar que el label interfiera con la entrada */
+  transition: all 0.3s ease;
+  color: #777; /* Color del texto */
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  bottom: 100%; /* Mover el label hacia arriba cuando el input tiene enfoque o contenido */
+  font-size: 0.8em; /* Tamaño del texto reducido */
+  color: #000; /* Cambiar color del texto */
+}
+button {
+  background-color: #2fbe6d; /* Azul cielo */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 40px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px; /* Añade espacio encima del botón */
+
+}
